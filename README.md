@@ -10,7 +10,7 @@ This repository _is not_ the original repository for this tool. Here are some li
 * [A Video of the Tool](http://goo.gl/dyNwyb)
 
 In this repository, for ExampleTool you will find:
-* :white_check_mark: Source code (available)
+* :x: Source code (not available)
 * :white_check_mark: [The original tool](SomeExecutableInTheRepo) (available)
 
 This repository was constructed by [Shveta Sharma](https://github.com/shveta08) under the supervision of [Emerson Murphy-Hill](https://github.com/CaptainEmerson). Thanks to Yuan Tian, David Lo and Julia Lawall for their help in establishing this repository. 
