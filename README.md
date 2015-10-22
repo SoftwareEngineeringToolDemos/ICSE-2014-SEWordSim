@@ -3,7 +3,7 @@
 
 ***
 
-This repository is contains information related to the tool SEWordSim. The tool was originally presented in [this paper](http://dl.acm.org/citation.cfm?doid=2591062.2591071).
+This repository contains information related to the tool SEWordSim. The tool was originally presented in [this paper](http://dl.acm.org/citation.cfm?doid=2591062.2591071).
 
 This repository _is not_ the original repository for this tool. Here are some links to the original project:
 * [The Official Project Page](http://goo.gl/BVEAs8)
