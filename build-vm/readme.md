@@ -16,5 +16,3 @@
 ###Acknowledgements:
 
   + Commands for installing Java 8 have been taken from [Andrew Glover's](https://github.com/aglover) [github repository](https://github.com/aglover/ubuntu-equip).
-  + Commands for installing Eclipse have been taken from [this blog](http://blog.versioneye.com/2015/05/05/setting-up-a-dev-environment-with-vagrant/).
-
