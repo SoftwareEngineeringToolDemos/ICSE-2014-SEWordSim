@@ -1,0 +1,28 @@
+
+import org.smu.wordsimilarity.WordSimDBFacade;
+
+public class Sample {
+	public static void main(String args[]) {
+		//read in database
+		String inputFile = "SEWordSim-r1.db";
+		WordSimDBFacade facade = new WordSimDBFacade(inputFile);
+		
+		//stem word
+		String inputWord = "folder";
+		String stemmedInputWord = facade.stemWord(inputWord);
+		String comparedWord = "directory";
+		String stemmedComparedWord = facade.stemWord(comparedWord);
+		
+		//set parameters
+		double minSimilarityScore = 0.3;
+		int N = 10;
+		
+		//search and print result
+		System.out.print(facade.isInDatabase(stemmedInputWord) + "\n");
+		System.out.print(facade.computeSimilarity(stemmedInputWord, stemmedComparedWord) + "\n");
+		System.out.print(facade.findMostSimilarWord(stemmedInputWord) + "\n");
+		System.out.print(facade.findMostSimilarWords(stemmedInputWord, minSimilarityScore) + "\n");
+		System.out.print(facade.findTopNWords(stemmedInputWord, N) + "\n");
+		//System.out.print(facade.getAllWords());
+	}
+}

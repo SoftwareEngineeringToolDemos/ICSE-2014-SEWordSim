@@ -1,0 +1,78 @@
+The folder contents can be downloaded : http://goo.gl/BVEAs8
+---------------------
+Welcome to our word similarity database tool verstion 1.2 for software engineering related tasks.
+If you have any questions, feel free to contact: yuan.tian.2012@phdis.smu.edu.sg
+---------------------
+This folder contains:
+
+1. SEWordSim-r1.db
+   A SQLite database file that contains similarities of 5,636,534 word pairs. We have verified a sample of results in this database.
+2. SEWordSim-r1.sql
+   A dump of SEWordSim-r1.db. Could be helpful if you want to migrate SEWordSim-r1.db to other types of database.
+3. SEWordSim-r2.db
+   A SQLite database file that contains similarities of 30,403,998 word pairs. 
+4. SEWordSim-r2.sql
+   A dump of SEWordSim-r2.db. Could be helpful if you want to migrate SEWordSim-r2.db to other types of database.
+5. doc.zip 
+   A expressed folder that contains API documentation. 
+6. SEWordSim.jar
+   A Java API that implements basic functionalities.
+7. ICSE-tool.pdf
+   Camera-ready version of our ICSE2014 formal demo paper. Contains detail steps of word similarity computation.
+8. README file
+   
+Sorry: our API couldn't work if you change the table name or filed name of the given database. We would try to make the API more extendable in next version.
+
+---------------------
+Before Start
+---------------------
+1. Make sure you have installed Java.
+2. Creat a new Java project.
+3. Add WordSimSE_DB.jar as a referenced library.
+4. Attach Javadoc to the library.
+
+---------------------
+Example
+---------------------
+public class Sample {
+	public static void main(String args[]) {
+		//read in database
+		String inputFile = "/System/SEWordSim-r1.db";
+		WordSimDBFacade facade = new WordSimDBFacade(inputFile);
+		
+		//stem word
+		String inputWord = "folder";
+		String stemmedInputWord = facade.stemWord(inputWord);
+		String comparedWord = "directory";
+		String stemmedComparedWord = facade.stemWord(comparedWord);
+		
+		//set parameters
+		double minSimilarityScore = 0.3;
+		int N = 10;
+		
+		//search and print result
+		System.out.print(facade.isInDatabase(stemmedInputWord) + "\n");
+		System.out.print(facade.computeSimilarity(stemmedInputWord, stemmedComparedWord) + "\n");
+		System.out.print(facade.findMostSimilarWord(stemmedInputWord) + "\n");
+		System.out.print(facade.findMostSimilarWords(stemmedInputWord, minSimilarityScore) + "\n");
+		System.out.print(facade.findTopNWords(stemmedInputWord, N) + "\n");
+		System.out.print(facade.getAllWords());
+	}
+}
+
+Results:
+true
+0.514176800780791
+directori
+[directori, file, project, path, ..., chang]
+[directori, file, project, path, site, local, exist, includ, build, app]
+[0f, 0m, 0px, 0x, 100px, 10px, 11px, 139px, 14px, 1px, 1st, 200px, 20px, 28java...]
+
+---------------------
+Enjoy it!
+---------------------
+
+Reference : 
+Name of the Paper - SEWordSim: Software-Specific Word Similarity Database
+Authors - Yuan Tian , David Lo, and Julia Lawall
+Link to the tool and related content - http://goo.gl/BVEAs8
