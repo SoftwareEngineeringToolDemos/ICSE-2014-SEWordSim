@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec="/home/vagrant/Desktop/EvoSuite/run_script.sh"
+Exec="/home/vagrant/Desktop/Executable/launch_SE_WordSim.sh"
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
