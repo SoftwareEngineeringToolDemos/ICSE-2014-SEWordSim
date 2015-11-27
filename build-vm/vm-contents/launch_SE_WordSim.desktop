@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec="/home/vagrant/Desktop/EvoSuite/run_script.sh"
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_IN]=run_script.sh
+Name=run_script
+Comment[en_IN]=EvoSuite_launcher
+Comment=EvoSuite_Launcher
