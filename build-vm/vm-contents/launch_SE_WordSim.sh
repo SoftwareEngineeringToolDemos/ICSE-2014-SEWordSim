@@ -1,1 +1,1 @@
-gnome-terminal -e "/home/shveta/Desktop/Executable/runScript.sh"
+gnome-terminal -e "/home/shveta/vagrant/Executable/runScript.sh"
