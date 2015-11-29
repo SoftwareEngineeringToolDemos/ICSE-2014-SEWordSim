@@ -26,11 +26,11 @@ sudo chown vagrant -R /home/vagrant/Desktop
 sudo chmod +x /home/vagrant/Desktop/Executable/*
 
 #set up sidebar
-sudo rm -f /user/share/applications/libreoffice-writer.desktop
-sudo rm -f /user/share/applications/libreoffice-calc.desktop
-sudo rm -f /user/share/applications/libreoffice-impress.desktop
-sudo rm -f /user/share/applications/amazon-default.desktop
-sudo rm -f /user/share/applications/ubuntu-software-center.desktop
+sudo rm -f "/usr/share/applications/libreoffice-writer.desktop" 2 > /dev/null
+sudo rm -f "/usr/share/applications/libreoffice-calc.desktop" 2 > /dev/null
+sudo rm -f "/usr/share/applications/libreoffice-impress.desktop" 2 > /dev/null
+sudo rm -f "/usr/share/applications/amazon-default.desktop" 2 > /dev/null
+sudo rm -f "/usr/share/applications/ubuntu-software-center.desktop" 2 > /dev/null
 
 #system reboot
 sudo reboot
