@@ -8,6 +8,7 @@ This repository contains information related to the tool SEWordSim presented at 
 
 This repository _is not_ the original repository for this tool. Here are some links to the original project:
 * [The Official Project Page](http://goo.gl/BVEAs8)
+* [Original Download Link](http://goo.gl/BVEAs8)
 * [A Video of the Tool](http://goo.gl/dyNwyb)
 
 In this repository, for SEWordSim you will find:
