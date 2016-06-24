@@ -14,6 +14,6 @@ This repository _is not_ the original repository for this tool. Here are some li
 In this repository, for SEWordSim you will find:
 * :white_check_mark: [Source code] (https://github.com/SoftwareEngineeringToolDemos/ICSE-2014-SEWordSim/blob/rkvardhi_evaluation/WordSimSEDB1.zip) (available)
 * :white_check_mark: [The original tool](https://github.com/SoftwareEngineeringToolDemos/ICSE-2014-SEWordSim/blob/master/bin/SEWordSim.jar) (available)
-* :white_check_mark: [Virtual Machine containing tool] (https://drive.google.com/file/d/0B3Uf4Uur8yIWSlFUM1hzU2w5Um8/view?usp=sharing)
+* :white_check_mark: [Virtual machine containing tool](http://go.ncsu.edu/SE-tool-VMs)
 
 This repository was constructed by [Shveta Sharma](https://github.com/shveta08) under the supervision of [Emerson Murphy-Hill](https://github.com/CaptainEmerson). Thanks to Yuan Tian, David Lo and Julia Lawall for their help in establishing this repository. 
